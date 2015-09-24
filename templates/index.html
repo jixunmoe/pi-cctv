@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  PiCam
+{% endblock %}
+
+{% block body %}
+  <div id="cam-container">
+    <canvas id="canvas"></canvas>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='cam.js') }}"></script>
+{% endblock %}

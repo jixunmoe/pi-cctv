@@ -1,0 +1,100 @@
+body {
+    background: #CAECE9;
+    font-family: 'Trebuchet MS', 'Microsoft JHengHei UI', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #26776F;
+}
+
+a:hover {
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: white;
+    border: 1px solid #BFE6E2;
+    padding: 2px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #105751;
+}
+
+input[type="submit"] {
+    background: #105751;
+    border: 1px solid #073B36;
+    padding: 1px 3px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: white;
+}
+
+div.container {
+    background: white;
+    border: 1px solid #6ECCC4;
+    margin: 30px auto;
+}
+
+div.container h1 {
+    background: #6ECCC4;
+    margin: 0;
+    padding: 10px 14px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px #24776F;
+    font-weight: normal;
+}
+
+div.container div.navigation {
+    background: #DEE9E8;
+    padding: 4px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+div.container div.navigation a {
+    color: #444;
+    font-weight: bold;
+}
+
+div.container h2 {
+    margin: 0 0 15px 0;
+    color: #105751;
+    text-shadow: 0 1px 2px #ccc;
+}
+
+div.container div.body {
+    padding: 10px;
+}
+
+div.container div.footer {
+    background: #eee;
+    color: #888;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px){
+  .container{max-width:728px}
+}
+
+@media (min-width: 992px){
+  .container{max-width:952px}
+}
+
+@media (min-width: 1200px){
+  .container{max-width: 80%}
+}
+

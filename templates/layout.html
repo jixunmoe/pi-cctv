@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>{% block title %}Welcome{% endblock %} | Pi Cam</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pi Cam</h1>
+    <div class="navigation">
+    {% if g.user %}
+      <a href="{{ url_for('logout') }}">sign out [{{ g.user.username }}]</a>
+    {% else %}
+      <a href="{{ url_for('login') }}">sign in</a>
+    {% endif %}
+    </div>
+    
+    <div class="body">
+    {% block body %}{% endblock %}
+    </div>
+    <div class="footer">
+      Pi Cam &mdash; A Flask Application
+    </div>
+  </div>
+</body>
+</html>
