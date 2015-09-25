@@ -7,11 +7,29 @@ You will need to first install all dependencies first:
     $ sudo apt-get install python-picamera
     $ sudo pip install Flask
 
+## Running pi-cctv
+
 Then you can run the following to boot the server:
 
     $ python app.py
 
-You can run the server in background using `screen`.
+You can run the server in background using `screen`:
+
+    $ screen -dm python app.py
+
+## Troubleshooting
+
+If you experience the following error:
+
+    * failed to open vchiq instance
+
+You might want try to fix it by execute this:
+
+    sudo chmod a+rw /dev/vchiq
+
+I am not sure why I need to do this everytime after boot.
+
+## Nginx back-end
 
 You can also run this using nginx:
 
